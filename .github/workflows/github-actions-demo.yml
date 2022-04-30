@@ -29,14 +29,16 @@
 #       - run: npm install -g bats
 #       - run: bats -v
 
-- name: slack-send
-  id: slack
-  uses: slackapi/slack-github-action@v1.18.0
-  with:
-    payload: |
-      {
-        "key": "hello",
-        "foo": "world" 
-      }
-  env:
-    SLACK_WEBHOOK_URL: ${{ https://hooks.slack.com/services/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 }}
+name: node test
+on: [push]
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 14
+        cache: 'npm'
+    - run: npm install
+    - run: npm test
