@@ -1,0 +1,11 @@
+name: 'Action test'
+description: 'action test'
+branding:
+  color: 'yellow'
+  icon: 'code'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
