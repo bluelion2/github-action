@@ -30,13 +30,17 @@
 #       - run: bats -v
 
 name: node test
-on: [push]
+on:
+  pull_request:
+  push: 
+    branches:
+      - main
 jobs:
   greeting_job:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
+      - name: Hello world2
         uses: jonnung/github-action-practice@master
         with:
           who-to-greet: 'Jonnung'
