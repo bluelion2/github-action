@@ -33,12 +33,9 @@ name: node test
 on: [push]
 jobs:
   hello-world:
+    name: hello world!
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 14
-        cache: 'npm'
-    - run: npm install
-    - run: npm test
+      - name: Hello world
+        id: hello id
+      
