@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world2
-        uses: bluelion2/github-action@main/.github/actions
+        uses: bluelion2/github-action@main/.github/actions/actions.yml
         id: hello-id
       - name: Echo the greeting's time
         run: echo 'The time was ${{ steps.hello.outputs.time }}.'
