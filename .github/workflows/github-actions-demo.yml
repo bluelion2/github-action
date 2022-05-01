@@ -46,5 +46,4 @@ jobs:
           path: node_modules
           key: npm-packages-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependancies
-        if: steps.caches.outputs.cache-hit !== 'true'
         run: npm install
