@@ -1,0 +1,10 @@
+name: pr_edit
+on:
+  pull_request_review:
+jobs: 
+  pr_review:
+    name: 'pr review!'
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "pr review create"
+  
