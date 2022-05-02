@@ -1,0 +1,8 @@
+name: issue comment review
+on: issue_comment
+jobs: 
+  issue_test:
+    name: 'Test'
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "issue commented!"
