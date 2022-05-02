@@ -10,6 +10,6 @@ jobs:
     steps: 
       - run: echo "issue commented!"
       - run: |
-          echo A comment on issue $NUMBER
+          echo A comment on issue $BODY
         env:
-          NUMBER: ${{ github.event.issue.number }}
+          BODY: ${{ github.event.issue.body }}
