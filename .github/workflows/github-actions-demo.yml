@@ -59,8 +59,6 @@
 name: pull_request_test
 on:
   pull_request_review_comment:
-    types:
-      - edited
 jobs: 
   pr_test:
     name: 'Test!!'
