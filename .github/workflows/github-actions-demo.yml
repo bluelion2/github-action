@@ -58,7 +58,7 @@
 
 name: pull_request_test
 on:
-  pull_request_review:
+  pull_request_review_comment:
     types:
       - edited
 jobs: 
@@ -67,4 +67,3 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: echo "pr edit test!"
-      
