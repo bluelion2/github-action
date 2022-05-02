@@ -10,5 +10,8 @@ jobs:
     steps: 
       - run: echo "issue commented!"
       - run: |
-          echo A comment on issue - ${{ github.event.issue.comment_id }}
+          echo A comment on issue - $NUMBER
+        env: 
+          NUMBER: ${{ github.event.issue.comment_id }}
+
 
