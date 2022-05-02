@@ -1,4 +1,4 @@
-name: pr_edit
+name: pr_request_review!!
 on:
   pull_request_review:
 jobs: 
