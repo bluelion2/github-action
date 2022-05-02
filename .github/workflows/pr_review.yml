@@ -56,7 +56,7 @@
 #         uses: actions/setup-node@v2
 #         run: echo "hello world Test2"
 
-name: pull_request_test
+name: pr comment review
 on:
   pull_request_review_comment:
 jobs: 
