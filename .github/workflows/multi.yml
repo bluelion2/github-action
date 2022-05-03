@@ -10,11 +10,13 @@ jobs:
       - name: create string
         run: |
           MY_STRING=${{ github.event.comment.body }}
+          echo '-------'
           MY_STRING="${MY_STRING//'%'/'%25'}"
           MY_STRING="${MY_STRING//$'\n'/'%0A'}"
           MY_STRING="${MY_STRING//$'\r'/'%0D'}"
           echo "::set-output name=content::$MY_STRING"
+           echo '-------'
         id: my_string
-      # - name: display string
-      #   run: |
-      #     echo "The string is: ${{ steps.my_string.outputs.content }}"
+      - name: display string
+        run: |
+          echo "The string is: ${{ steps.my_string.outputs.content }}"
