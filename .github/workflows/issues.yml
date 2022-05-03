@@ -1,0 +1,14 @@
+name: issues comment review2
+on: 
+  issue_comment:
+    types: [created, edited]
+jobs: 
+  issue_test:
+    name: 'Issue_comment'
+    if: ${{ github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps: 
+      - run: |
+         echo "issues commented!"
+         echo ${{ github.event.issues }}
+         echo ${{ github.event.issues[0] }}
