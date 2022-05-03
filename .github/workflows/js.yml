@@ -7,8 +7,18 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      # git checkout
       - name: check out
         uses: actions/checkout@v3
+      # nodejs 사용함
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+
+      # npm cache가 있으면 그거 씀
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm install
+      # js action 사용
       - name: Run My Actions 
         uses: ./
         with:
