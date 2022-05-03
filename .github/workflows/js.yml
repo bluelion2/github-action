@@ -1,0 +1,11 @@
+name: js test
+on: 
+  issue_comment:
+    types: [created, edited]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - run: ls -al
+      - uses: actions/checkout@v3
