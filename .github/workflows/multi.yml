@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: create string
         run: |
-          MY_STRING=${{ github.event.comment.body }}
+          ISSUE=${github.event.issue.body}
+          echo '-------'
+          COMMENT=${{ github.event.comment.body }}
           echo '-------'
           MY_STRING=${MY_STRING//'%'/'%25'}
           MY_STRING=${MY_STRING//$'\n'/'%0A'}

@@ -10,8 +10,8 @@ jobs:
     steps: 
       - run: |
          echo "issue commented!"
-         echo ${{ github.event.issue.body }}
-         echo ${{ github.event.issue.comments }}
+         echo "issue body" ${{ github.event.issue.body }}
+         echo "issue comments" ${{ github.event.issue.comments }}
          echo ${{ github.event.comment.url }}
          echo ${{ github.event.comment.body }}
 
