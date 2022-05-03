@@ -12,7 +12,7 @@ jobs:
          echo "issue commented!"
          echo ${{ github.event.issue.id }}
          echo ${{ github.event.issue.number }}
-         echo ${{ github.event.issue.body }}
+         echo ${{ github.event.issue.title }}
          echo ${{ github.event.issue.user }}
 
         #  echo ${{ github.event }}

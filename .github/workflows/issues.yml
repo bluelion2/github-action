@@ -1,7 +1,7 @@
 name: issues comment review2
 on: 
-  issue_comment:
-    types: [created, edited]
+  issues:
+    types: [edited]
 jobs: 
   issue_test:
     name: 'Issue_comment'
@@ -11,4 +11,4 @@ jobs:
       - run: |
          echo "issues commented!"
          echo ${{ github.event.issues }}
-         echo ${{ github.event.issues[0] }}
+         echo ${{ github.event.issues[1].body }}
