@@ -9,4 +9,4 @@ jobs:
     steps:
       - run: ls -al
       - uses: actions/checkout@v3
-      - uses: ./github/actions/action.yml
+      - uses: ./.github/actions/action.yml
