@@ -13,6 +13,6 @@ jobs:
          echo ${{ github.event.issue.id }}
          echo ${{ github.event.issue.number }}
          echo ${{ github.event.issue.title }}
-         echo ${{ github.event.issue.user }}
+         echo ${{ github.event.issue.comment }}
 
         #  echo ${{ github.event }}
