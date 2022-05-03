@@ -1,7 +1,7 @@
 name: issue comment review
 on: 
   issue_comment:
-    types: [edited]
+    # types: [edited]
 jobs: 
   issue_test:
     name: 'Issue_comment'
@@ -9,9 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: echo "issue commented!"
-      - run: |
-          echo A comment on issue - $NUMBER
-        env: 
-          NUMBER: ${{ github.event.issue.comment_id }}
-
-
+      - run: echo ${{ github.event.issue[0].title }}
+      - run: echo ${{ github.event.issue[0].body }}
+      - run: echo ${{ github.event.issue[0].url }}
