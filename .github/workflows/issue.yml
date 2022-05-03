@@ -11,8 +11,7 @@ jobs:
       - run: |
          echo "issue commented!"
          echo ${{ github.event.issue.id }}
-         echo ${{ github.event.issu.number }}
-         echo ${{ JSON(github.event.issue) }}
+         echo ${{ github.event.issue.number }}
          echo ${{ github.event.issue.body }}
          echo ${{ github.event.issue.user }}
 
