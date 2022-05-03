@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: bluelion2/github-action@main
+        uses: './.github/actions'
         with:
           who-to-greet: 'Mona the Octocat'
           branch: main
