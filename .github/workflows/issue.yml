@@ -8,7 +8,7 @@ jobs:
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps: 
-      - run: echo "issue commented!"
-      - run: echo ${{ github.event.issue[0].title }}
-      - run: echo ${{ github.event.issue[0].body }}
-      - run: echo ${{ github.event.issue[0].url }}
+      - run: |
+         echo "issue commented!"
+         echo ${{ github.event.issue }}
+        #  echo ${{ github.event }}
