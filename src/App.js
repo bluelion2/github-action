@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn github actio test!~
+          vercel change
         </a>
       </header>
     </div>
