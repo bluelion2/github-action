@@ -10,7 +10,6 @@ jobs:
       - name: create string
         run: |
           MY_STRING=${{ github.event.comment.body }}
-          echo ${MY_STRING}
           MY_STRING="${MY_STRING//'%'/'%25'}"
           MY_STRING="${MY_STRING//$'\n'/'%0A'}"
           MY_STRING="${MY_STRING//$'\r'/'%0D'}"
