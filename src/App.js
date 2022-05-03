@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn github actio test!~
+          한번더 수정
         </a>
       </header>
     </div>
