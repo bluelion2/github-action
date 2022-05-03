@@ -7,5 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - run: ls -al
+      - run: check out
       - uses: actions/checkout@v3
+      - name: Run My Actions 
+        uses: ./
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          comment: ${{ github.event.comment.body }}
+          issue: ${{ github.event.issue.body }}
