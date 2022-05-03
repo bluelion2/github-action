@@ -1,19 +1,18 @@
-on:
-  workflow_dispatch:
-    
-jobs:
-  hello-my-actions:
+name: issue comment review
+on: 
+  issue_comment:
+    types: [created, edited]
+jobs: 
+  issue_test:
+    name: 'Issue_comment'
+    if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
-    name: Hello My Actions
-    steps:
-      - name: checkout
-        uses: actions/checkout@v1
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm install
-      - name: Run My Actions 
-        uses: ./ # 루트 디렉토리에 있는 액션을 사용하라는 의미이다.
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+    steps: 
+      - run: |
+         echo "issue commented!"
+         echo ${{ github.event.issue.body }}
+         echo ${{ github.event.issue.comments }}
+         echo ${{ github.event.comment.url }}
+         echo ${{ github.event.comment.body }}
+
+        #  echo ${{ github.event }}
