@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: |
-         |
          echo "issue commented!"
          echo ${{ github.event.issue.body }}
          echo ${{ github.event.issue.comments }}
