@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: create string
         run: |
-          ISSUE=${github.event.issue.body}
+          ISSUE=${{github.event.issue.body}}
           echo '-------'
           COMMENT=${{ github.event.comment.body }}
           echo '-------'
