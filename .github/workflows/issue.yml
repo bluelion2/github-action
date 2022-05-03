@@ -1,7 +1,7 @@
 name: issue comment review
 on: 
   issue_comment:
-    # types: [edited]
+    types: [created, edited]
 jobs: 
   issue_test:
     name: 'Issue_comment'
