@@ -1,10 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 const axios = require('axios')
-// const fetch = require('node-fetch');
-// import core from '@actions/core'
-// import github from '@actions/github'
-// import fetch from 'node-fetch'
 
 const issueKey =  'MATH2SP-431'
 
@@ -56,7 +52,7 @@ try {
 
 
   const action = axios.create({
-    baseUrl: 'https://freewheelin.atlassian.net/rest/api/3',
+    baseURL: 'https://freewheelin.atlassian.net/rest/api/3',
     headers: {
       'Authorization': `Basic ${Buffer.from(
         'ksh0228@mathflat.com:G46Tsw7PCPTgv9OJUGmM8AB5'
