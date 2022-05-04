@@ -1,8 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 const axios = require('axios')
-const Buffer = require('buffer')
-
 
 const action = axios.create({
   baseUrl: 'https://freewheelin.atlassian.net/rest/api/3',
@@ -14,6 +12,7 @@ const action = axios.create({
     'Content-Type': 'application/json'
   },
 })
+const issueKey =  'MATH2SP-431'
 
 const body = `{
   "visibility": {
@@ -50,22 +49,7 @@ try {
 
   console.log('changedComment', changedComment)
   console.log('prBody', prBody)
-  
-  // const jiraUrl = (() => {
-  //   const index = prBody.slice('https')
-  //   if (!index) return 
-  //   return prBody.slice(index, prBody.length)
-  // })()
-  
-  // if (jiraUrl) {
-  //   console.log('jiraUrl', jiraUrl)
-  // }
-
-  // https://freewheelin.atlassian.net/browse/MATH2SP-431
-  const issueKey =  'MATH2SP-431'
-
   action.post(`/issue/${issueKey}/comment`, { body })
-
 
 } catch (error) {
   core.setFailed(error.message);
