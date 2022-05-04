@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 const axios = require('axios')
+const fetch = require('node-fetch');
 
 const action = axios.create({
   baseUrl: 'https://freewheelin.atlassian.net/rest/api/3',
