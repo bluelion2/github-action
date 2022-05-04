@@ -57,7 +57,7 @@ try {
             "type": "paragraph",
             "content": [
               {
-                "text": "preview url : ${vercelUrl}"
+                "text": "preview url : ${vercelUrl}",
                 "type": "text"
               }
             ]
