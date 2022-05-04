@@ -55,7 +55,7 @@ try {
     baseURL: 'https://freewheelin.atlassian.net/rest/api/3',
     headers: {
       'Authorization': `Basic ${Buffer.from(
-        'ksh0228@mathflat.com:G46Tsw7PCPTgv9OJUGmM8AB5'
+        'ksh0228@mathflat.com:fytwWpIEDSnzuCDBMZDi483C'
       ).toString('base64')}`,
       'Accept': 'application/json',
       'Content-Type': 'application/json'
