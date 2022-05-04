@@ -33,7 +33,7 @@ try {
   // /(https?:\/\/freewheelin\.atlassian\.net\/browse\/(\S+\-[0-9]+))/
   const [, vercelUrl] = changedComment.match(/review.+(https?\S+\.vercel\.app)/)
 
-  const [, jiraUrl,issueKey] = prBody.match(/(https?:\/\/freewheelin\.atlassian\.net\/browse\/(\S+\-[0-9]+))/)[0]
+  const [, jiraUrl,issueKey] = prBody.match(/(https?:\/\/freewheelin\.atlassian\.net\/browse\/(\S+\-[0-9]+))/)
   console.log('jiraUrl', jiraUrl)
   console.log('vercelUrl', vercelUrl)
   if (vercelUrl && jiraUrl) {
