@@ -31,7 +31,7 @@ const body = `{
 
 try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  // console.log(`The event payload: ${payload}`);
 
   // console.log("typeof payload", typeof payload)
   const changedComment = github.context.payload.comment.body
