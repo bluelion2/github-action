@@ -1,18 +1,21 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const axios = require('axios')
-const fetch = require('node-fetch');
+// const core = require('@actions/core');
+// const github = require('@actions/github');
+// const axios = require('axios')
+// const fetch = require('node-fetch');
+import core from '@actions/core'
+import github from '@actions/github'
+import fetch from 'node-fetch'
 
-const action = axios.create({
-  baseUrl: 'https://freewheelin.atlassian.net/rest/api/3',
-  headers: {
-    'Authorization': `Basic ${Buffer.from(
-      'ksh0228@mathflat.com:G46Tsw7PCPTgv9OJUGmM8AB5'
-    ).toString('base64')}`,
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-  },
-})
+// const action = axios.create({
+//   baseUrl: 'https://freewheelin.atlassian.net/rest/api/3',
+//   headers: {
+//     'Authorization': `Basic ${Buffer.from(
+//       'ksh0228@mathflat.com:G46Tsw7PCPTgv9OJUGmM8AB5'
+//     ).toString('base64')}`,
+//     'Accept': 'application/json',
+//     'Content-Type': 'application/json'
+//   },
+// })
 const issueKey =  'MATH2SP-431'
 
 const body = `{
