@@ -14,8 +14,8 @@ try {
   const changedComment = github.context.payload.comment.body
   const prBody = github.context.payload.issue.body
 
-  // console.log('changedComment', changedComment)
-  // console.log('prBody', prBody)
+  console.log('changedComment', changedComment)
+  console.log('prBody', prBody)
   // fetch(`https://freewheelin.atlassian.net/rest/api/3/issue/${issueKey}/comment`, {
   //   headers: {
   //     'Authorization': `Basic ${Buffer.from(
