@@ -50,7 +50,7 @@ try {
   //   body
   // })
   const auth = `Basic ${Buffer.from(
-    'ksh0228@mathflat.com:iaXF6EJufCJ1j_ldtoMxIW-L4zU0IkFrpRTUWqX7OkwIFUrLgEgzt9F1IEhHOvJg'
+    'ksh0228@mathflat.com:ieyv6sldxxY1D8Z81UEaAB12'
   ).toString('base64')}`
 
   console.log('auth', auth)
