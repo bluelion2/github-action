@@ -22,50 +22,29 @@ jobs:
       - name: jira test 
         run: |
           curl --request POST \
-          --url 'https://freewheelin.atlassian.net/rest/api/3/issue/MATH2SP-431/comment' \
-          --user 'ksh0228@mathflat.com:CnSOVMUX5ItObYDuG1NH8E0D'
-          --header 'Accept: application/json' \
-          --header 'Content-Type: application/json' \
-          --data '{
-            "body": {
-              "type": "doc",
-              "version": 1,
-              "content": [
-                {
-                  "type": "paragraph",
-                  "content": [
-                    {
-                      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.",
-                      "type": "text"
-                    }
-                  ]
-                }
-              ]
-            }
-          }'
+            --url 'https://freewheelin.atlassian.net/rest/api/3/issue/MATH2SP-431/comment' \
+            --user 'ksh0228@mathflat.com:CnSOVMUX5ItObYDuG1NH8E0D'
+            --header 'Accept: application/json' \
+            --header 'Content-Type: application/json' \
+            --data '{
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }'
 
       # - name: Run My Actions 
       #   uses: ./
       #   with:
       #     github-token: ${{ secrets.GITHUB_TOKEN }}
-
-# curl --request POST \  --url 'https://freewheelin.atlassian.net/rest/api/3/issue/MATH2SP-431/comment' \ --user 'ksh0228@mathflat.com:ieyv6sldxxY1D8Z81UEaAB12' \
-#   --header 'Accept: application/json' \
-#   --header 'Content-Type: application/json' \
-#   --data '{
-#   "body": {
-#     "type": "doc",
-#     "version": 1,
-#     "content": [
-#       {
-#         "type": "paragraph",
-#         "content": [
-#           {
-#             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.",
-#             "type": "text"
-#           }
-#         ]
-#       }
-#     ]
-#   }
-# }'
