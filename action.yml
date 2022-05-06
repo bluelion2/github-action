@@ -1,9 +1,12 @@
 name: 'hello-my-action'
 description: 'Hello My Action'
 inputs:
-  github-token:
-    description: 'github token'
+  jira-token: 
+    description: 'jira api token'
     required: true
+  # github-token:
+  #   description: 'github token'
+  #   required: true
 runs:
   using: 'node16'
   main: 'index.js'
