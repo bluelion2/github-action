@@ -21,8 +21,9 @@ jobs:
       # js action 사용
       - name: jira test 
         run: |
-          curl --request POST --url 'https://freewheelin.atlassian.net/rest/api/3/issue/MATH2SP-431/comment' \
-          --user 'ksh0228@mathflat.com:ieyv6sldxxY1D8Z81UEaAB12'
+          curl --request POST \
+          --url 'https://freewheelin.atlassian.net/rest/api/3/issue/MATH2SP-431/comment' \
+          --user 'ksh0228@mathflat.com:CnSOVMUX5ItObYDuG1NH8E0D'
           --header 'Accept: application/json' \
           --header 'Content-Type: application/json' \
           --data '{
@@ -42,6 +43,7 @@ jobs:
               ]
             }
           }'
+
       # - name: Run My Actions 
       #   uses: ./
       #   with:
