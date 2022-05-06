@@ -13,6 +13,8 @@ try {
 
   console.log('changedComment', changedComment)
   console.log('prBody', prBody)
+  const jira = core.getInput('jira-token')
+  console.log("jira", jira)
   // fetch(`https://freewheelin.atlassian.net/rest/api/3/issue/${issueKey}/comment`, {
   //   headers: {
   //     'Authorization': `Basic ${Buffer.from(
@@ -70,7 +72,7 @@ try {
   //   })
 
   //   action.post(`/issue/${issueKey}/comment`, body)
-  }
+  // }
 } catch (error) {
   core.setFailed(error.message);
 }
