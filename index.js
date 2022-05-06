@@ -35,7 +35,7 @@ try {
   if (vercelUrl && jiraUrl) {
     
     const auth = `Basic ${Buffer.from(
-      'ksh0228@mathflat.com:ZxN5uMkLW5Vy4lfXkE2j6DA7'
+      'ksh0228@mathflat.com:2MQWbrXBcwpaZWPL6yS8774F'
     ).toString('base64')}`
 
     console.log('auth', auth)

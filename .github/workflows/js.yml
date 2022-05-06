@@ -44,7 +44,7 @@ jobs:
               }
             }'
 
-      # - name: Run My Actions 
-      #   uses: ./
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run My Actions 
+        uses: ./
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
