@@ -35,9 +35,10 @@ try {
   if (vercelUrl && jiraUrl) {
     
     const auth = `Basic ${Buffer.from(
-      'ksh0228@mathflat.com:ieyv6sldxxY1D8Z81UEaAB12'
+      'ksh0228@mathflat.com:<CnSOVMUX5ItObYDuG1NH8E0D>'
     ).toString('base64')}`
 
+    console.log('auth', auth)
     const body = `{
       "body": {
         "type": "doc",
