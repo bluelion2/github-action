@@ -23,7 +23,7 @@ jobs:
         run: |
           curl --request POST \
             --url 'https://freewheelin.atlassian.net/rest/api/3/issue/MATH2SP-431/comment' \
-            --user 'ksh0228@mathflat.com:NaVvLkWLfhqzshZ4GLJX31DC' \
+            --user 'ksh0228@mathflat.com:5aGkk6ELBd6qD3SxeZfT466A' \
             --header 'Accept: application/json' \
             --header 'Content-Type: application/json' \
             --data '{
