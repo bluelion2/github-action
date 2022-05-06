@@ -2,10 +2,6 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const axios = require('axios')
 
-const issueKey =  'MATH2SP-431'
-
-
-
 try {
   // const payload = JSON.stringify(github.context.payload, undefined, 2)
   // console.log(`The event payload: ${payload}`);
@@ -42,13 +38,7 @@ try {
       'ksh0228@mathflat.com:ieyv6sldxxY1D8Z81UEaAB12'
     ).toString('base64')}`
 
-    console.log('auth', auth)
     const body = `{
-      "visibility": {
-        "identifier": "Administrators",
-        "type": "role",
-        "value": "Administrators"
-      },
       "body": {
         "type": "doc",
         "version": 1,
