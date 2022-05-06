@@ -1,0 +1,9 @@
+name: 'jira add comment'
+description: 'jira add comment for designeer'
+inputs:
+  jira-token: 
+    description: 'jira api token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
