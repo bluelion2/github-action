@@ -35,10 +35,6 @@ try {
               "type": "paragraph",
               "content": [
                 {
-                  "text": "preview url : ${vercelUrl}",
-                  "type": "text"
-                },
-                {
                   "type": "text",
                   "text": "Hello world",
                   "marks": [
