@@ -22,7 +22,7 @@ jobs:
           jira-token: ${{secrets.JIRA_TOKEN}}
       # github.secrets에 있는 token을 가져와서 js에 전달.
       - name: jira issue add comment by vercel deployed
-        uses: bluelion2/jira-add-comment-action@v1.0.5
+        uses: bluelion2/jira-add-comment-action@v1.0.6
         with:
           jira-token: ${{ secrets.JIRA_TOKEN }}
           jira-url: ${{ 'https://freewheelin.atlassian.net/rest/api/3' }}
