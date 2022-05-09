@@ -37,19 +37,19 @@ try {
                 {
                   "text": "preview url : ${vercelUrl}",
                   "type": "text"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "Hello world",
-              "marks": [
+                },
                 {
-                  "type": "link",
-                  "attrs": {
-                    "href": "http://atlassian.com",
-                    "title": "Atlassian"
-                  }
+                  "type": "text",
+                  "text": "Hello world",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://atlassian.com",
+                        "title": "Atlassian"
+                      }
+                    }
+                  ]
                 }
               ]
             }
