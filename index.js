@@ -32,20 +32,15 @@ try {
           "version": 1,
           "content": [
             {
-              "type": "paragraph",
-              "content": [
+              "type": "text",
+              "text": "Hello world",
+              "marks": [
                 {
-                  "type": "text",
-                  "text": "Hello world",
-                  "marks": [
-                    {
-                      "type": "link",
-                      "attrs": {
-                        "href": "http://atlassian.com",
-                        "title": "Atlassian"
-                      }
-                    }
-                  ]
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://atlassian.com",
+                    "title": "Atlassian"
+                  }
                 }
               ]
             }
