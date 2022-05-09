@@ -32,8 +32,8 @@ try {
           "version": 1,
           "content": [
             {
-              "type": "text",
-              "text": "Hello world",
+              "type": "link",
+              "text": "world",
               "marks": [
                 {
                   "type": "link",
@@ -47,6 +47,24 @@ try {
           ]
         }
       }`;
+
+      // const body = `{
+      //   "body": {
+      //     "type": "doc",
+      //     "version": 1,
+      //     "content": [
+      //       {
+      //         "type": "paragraph",
+      //         "content": [
+      //           {
+      //             "text": "preview url : ${vercelUrl}",
+      //             "type": "text"
+      //           }
+      //         ]
+      //       },
+      //     ]
+      //   }
+      // }`;
 
       const action = axios.create({
         baseURL: 'https://freewheelin.atlassian.net/rest/api/3',
