@@ -39,6 +39,19 @@ try {
                   "type": "text"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "world",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://atlassian.com",
+                    "title": "Atlassian"
+                  }
+                }
+              ]
             }
           ]
         }
