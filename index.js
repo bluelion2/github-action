@@ -32,7 +32,7 @@ try {
           "version": 1,
           "content": [
             {
-              "type": "link",
+              "type": "text",
               "text": "world",
               "marks": [
                 {
