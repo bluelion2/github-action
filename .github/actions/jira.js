@@ -35,18 +35,14 @@ try {
               "type": "paragraph",
               "content": [
                 {
-                  "text": "preview url : ${vercelUrl}",
-                  "type": "text"
-                },
-                {
                   "type": "text",
-                  "text": "world",
+                  "text": "preview url",
                   "marks": [
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "http://atlassian.com",
-                        "title": "Atlassian"
+                        "href": "${vercelUrl}",
+                        "title": "preview url"
                       }
                     }
                   ]

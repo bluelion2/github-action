@@ -16,15 +16,15 @@ jobs:
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm install
-      # - name: Run My Actions 
-      #   uses: ./.github/actions/
-      #   with:
-      #     jira-token: ${{secrets.JIRA_TOKEN}}
-      # github.secrets에 있는 token을 가져와서 js에 전달.
-      - name: jira issue add comment by vercel deployed
-        uses: bluelion2/jira-add-comment-action@v1.0.10
+      - name: Run My Actions 
+        uses: ./.github/actions/
         with:
-          jira-token: ${{ secrets.JIRA_TOKEN }}
-          jira-url: ${{ 'https://freewheelin.atlassian.net/rest/api/3' }}
-          jira-email: ${{ 'ksh0228@mathflat.com' }}
-          comment-header: ${{ 'Preview Url' }}
+          jira-token: ${{secrets.JIRA_TOKEN}}
+      # github.secrets에 있는 token을 가져와서 js에 전달.
+      # - name: jira issue add comment by vercel deployed
+      #   uses: bluelion2/jira-add-comment-action@v1.0.10
+      #   with:
+      #     jira-token: ${{ secrets.JIRA_TOKEN }}
+      #     jira-url: ${{ 'https://freewheelin.atlassian.net/rest/api/3' }}
+      #     jira-email: ${{ 'ksh0228@mathflat.com' }}
+      #     comment-header: ${{ 'Preview Url' }}
