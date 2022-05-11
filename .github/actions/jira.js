@@ -25,7 +25,6 @@ try {
         `ksh0228@mathflat.com:${jiraToken}`
       ).toString('base64')}`
   
-      console.log('auth', auth)
       const body = `{
         "body": {
           "type": "doc",
